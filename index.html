@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gor Futsal Sukabumi</title>  
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="DataTables/media/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+  <header>
+    <ul>
+      <li style="border-right: solid;"><a href="#">Login <i class="fa fa-lock"></i></a></li>
+      <li><a href="#">Register <i class="fa fa-registered"></i></a></li>
+    </ul>
+  </header>
+    <center>
+        <h1>Daftar Gor Futsal Kab.Sukabumi</h1>
+    </center>
+    <br/>
+    <br/>
+    <div class="container">
+        <table class="table table-striped table-bordered data table-hover">
+            <thead>
+                <tr>            
+                    <th>Nama Gor</th>
+                    <th>Alamat Gor</th>
+                    <th>Buka</th>
+                    <th>Tutup</th>
+                </tr>
+            </thead>
+            <tbody>
+               <tr>
+                   <td>Sejahtera</td>
+                   <td>Cibadak - Karang Tengah - Sukabumi</td>
+                   <td>08.00</td>
+                   <td>24.00</td>
+               </tr>
+               <tr>
+                   <td>GorOlong</td>
+                   <td>Nagrak - Sukabumi</td>
+                   <td>00.00</td>
+                   <td>00.00</td>
+               </tr>
+               <tr>
+                   <td>Siliwangi</td>
+                   <td>Cisaat - Sukabumi</td>
+                   <td>07.00</td>
+                   <td>22.00</td>
+               </tr>
+               <tr>
+                   <td>Disen</td>
+                   <td>Kota Sukabumi</td>
+                   <td>07.30</td>
+                   <td>23.30</td>
+               </tr>
+               <tr>
+                   <td>Barcelona</td>
+                   <td>Kota Sukabumi</td>
+                   <td>08.00</td>
+                   <td>00.00</td>
+               </tr>
+                <tr>
+                    <td>Liverpool</td>
+                    <td>Kota Sukabumi</td>
+                    <td>09.00</td>
+                    <td>00.00</td>
+                </tr>
+                <tr>
+                    <td>Cibadak Futsal Stadium</td>
+                    <td>Cibadak - Sukabumi</td>
+                    <td>07.00</td>
+                    <td>00.00</td>
+                </tr>
+                <tr>
+                    <td>Bensal Futsal</td>
+                    <td>Sukabumi</td>
+                    <td>07.00</td>
+                    <td>00.00</td>
+                </tr>
+                <tr>
+                    <td>Double D</td>
+                    <td>Cicurug - Sukabumi</td>
+                    <td>07.00</td>
+                    <td>23.00</td>
+                </tr>
+                <tr>
+                    <td>SA Futsal</td>
+                    <td>Kota Sukabumi</td>
+                    <td>08.00</td>
+                    <td>00.00</td>                    
+                </tr>
+                <tr>
+                    <td>Sukabumi indah futsal</td>
+                    <td>Kebon Jati - Cikole - Sukabumi</td>
+                    <td>08.00</td>
+                    <td>02.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+<div class="content">
+    <center>
+      <div class="title">
+        <h3>Gor Anda ingin Tampil di sini ?</h3>
+        <h4>Daftarkan disini !</h4>
+      </div>
+      <form>
+        <input type="text" name="" placeholder="Nama Gor">
+      </form>
+      <form>
+        <input type="text" name="" placeholder="Alamat Gor" readonly="" style="width: 438px; ">
+        <input type="text" name="" placeholder="Nama Kecamatan" readonly="" style="width: 160px;">
+        <select>
+          <option>..............</option>
+          <option>Cibadak</option>
+          <option>Cisaat</option>
+          <option>Nagrak</option>
+          <option>Cicantayan</option>
+          <option>Cicurug</option>
+        </select>
+      </form>
+      <form>
+        <input type="text" name="" placeholder="Jam Tutup">
+      </form>
+      <form>
+        <input type="text" name="" placeholder="Jam Buka">
+      </form>
+      <form>
+        <button type="button">Submit</button>
+      </form>
+    </center>
+</div>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.data').DataTable();
+    });
+</script>
+</html>
